@@ -162,7 +162,7 @@
   
   </page>
   
-  <page background='ForestA.png'>
+  <page background='ForestA.png' soundtrack='boss_battle.wav'>
 	<agent text='Na entrada da floresta, eles dão de cara com  um Troll' x='20' y='450' font-size='18' color='white' on-touch='history2'>
     <history2 text='COMIDAAAAA!(TROLL)' y='430' font-size='15' color='white' on-touch='history3'/>
     <history3 text='Precisamos usar nossa poção do sono nele(White)' y='400' font-size='15' color='white' on-touch='history4'/>
@@ -318,7 +318,7 @@
   
   </page>
   
-  <page background='vila.jpg'> 
+  <page background='vila.jpg' soundtrack='music2.wav'> 
     <agent text='Ao pegar o cristal que  o monstro dropou, eles foram teleportados para sua vila.' x='20' y='400' font-size='20' color='black'>
     
     </agent>   
