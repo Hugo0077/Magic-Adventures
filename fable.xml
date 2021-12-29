@@ -1,6 +1,341 @@
 <fable>
-	<page>
+	
+  <page background='MENU.png'>
+    <agent text='Magic Adventure' x='120' y='330' font-size='30' color='white'>
+    
+    </agent>
+    <agent img='PLAY.png' x='190' y='75' width='120' height='50' on-touch='_NEXT_PAGE'/>
+    
+  </page>   
   
+  <page background='vila.jpg'> 
+    <agent text='Em uma terra longínqua, chamada Woodland, viviam inúmeras criaturas mágicas' x='20' y='450' font-size='20' color='black' on-touch='history2'>
+      <history2 text='Porém, nessa mesma terra, havia uma tenebrosa caverna que escondia um monstro e um tesouro magnifico' on-touch='history3' x='20' y='400' font-size='20' color='black'/>	
+        <history3 text='White e Pink, dois jovens curiosos e loucos por aventura, viviam lutando contra o desejo de adentrar tal caverna' y='395' on-touch='history4'/>
+          <history4 text='Eles sabiam que era perigoso, mas não conseguiam parar de pensar nos segredos que existiam ali.' />
+        
+    </agent>
+    <agent img='ground1.png' x='0' y='0' width='100' height='100'/>
+    <agent img='ground1.png' x='100' y='0' width='100' height='100'/>
+    <agent img='ground1.png' x='200' y='0' width='100' height='100'/>
+    <agent img='ground1.png' x='300' y='0' width='100' height='100'/>
+    <agent img='ground1.png' x='400' y='0' width='100' height='100'/>
+    <agent img='ar1.png' x='20' y='100' width='200' height='200'/>
+    <agent img='bush2.png' x='300' y='100' width='100' height='70'/>
+    <agent img='white.png' x='0' y='99' width='65' height='65'/>
+    <agent img='pink.png' x='50' y='99' width='65' height='65'/>
+		<agent img='back.png' x='18'  y='12' width='64' height='64' on-touch='_PREV_PAGE' />
+    <agent img='skip.png'  x='420' y='12' width='64' height='64' on-touch='_NEXT_PAGE' />
+    
+  
+        
+  
+  </page>
+  
+  <page background='back2.png' soundtrack='music2.wav'>
+    <agent text='Um dia, eles cederam à tentação e foram para a caverna.' x='20' y='450' font-size='20' color='black'>
+    
+    </agent>
+    <agent img='white.png' x='200' y='99' width='65' height='65'/>
+    <agent img='pink.png' x='100' y='99' width='65' height='65'/>
+    <agent img='ground1.png' x='0' y='0' width='100' height='100'/>
+    <agent img='ground1.png' x='100' y='0' width='100' height='100'/>
+    <agent img='ground1.png' x='200' y='0' width='100' height='100'/>
+    <agent img='ground1.png' x='300' y='0' width='100' height='100'/>
+    <agent img='ground1.png' x='400' y='0' width='100' height='100'/>
+    <agent img='bush2.png' x='300' y='100' width='100' height='70'/>
+    <agent img='bush2.png' x='150' y='100' width='70' height='40'/>
+    <agent img='back.png' x='18'  y='12' width='64' height='64' on-touch='_PREV_PAGE' />
+    <agent img='skip.png'  x='420' y='12' width='64' height='64' on-touch='_NEXT_PAGE' />
+    
+    
+    <agent img='balao1.png' 
+      x='225' y='140' width='100' height='100'/>
+    <agent text='Vamos Lá!' 
+      x='240' y='110'  width='100' height='100' color='black'>
+    
+    
+    </agent>
+    
+      </page>
+  
+  <page background='back2.png' soundtrack='music2.wav'>
+    <agent text='O primeiro desafio que encontraram, foi um rio de ácido.' x='20' y='450' font-size='20' color='black'>
+    
+    </agent>
+    <agent img='acid1.png' x='100' y='0' width='100' height='100'/>
+    <agent img='ground1.png' x='0' y='0' width='100' height='100'/>
+    <agent img='ground2.png' x='100' y='0' width='100' height='100'/>
+    <agent img='acid1.png' x='200' y='0' width='100' height='100'/>
+    <agent img='acid1.png' x='300' y='0' width='100' height='100'/>
+    <agent img='acid1.png' x='400' y='0' width='100' height='100'/>
+    <agent img='1.png' x='400' y='0' width='100' height='100'/>
+    <agent img='bush2.png' x='400' y='100' width='100' height='70'/>
+    <agent img='bush2.png' x='0' y='100' width='70' height='40'/>
+    <agent img='skip.png'  x='420' y='12' width='64' height='64' on-touch='_NEXT_PAGE' />
+    <agent img='acid1.png' x='300' y='0'  width='100'  height='100' 
+           on-trigger='up' >
+    <up img='pont1.png' x='200' y='0'  width='100'  height='100' on-touch='up1'/>
+    <up1 img='pont1.png' />
+      
+    </agent>
+      <agent img='acid1.png' x='300' y='0'  width='100'  height='100' 
+           on-trigger='up' >
+    <up img='pont2.png' x='300' y='0'  width='100'  height='100' on-touch='up1'/>
+    <up1 img='pont2.png' />
+        
+    </agent>
+      <agent img='1.png' x='400' y='0'  width='100'  height='100' 
+           on-trigger='up' >
+    <up img='skip.png' x='420' y='12' width='64' height='64' on-touch='_NEXT_PAGE' />
+    <up1 img='skip.png' />
+    
+    </agent>
+    <agent img='lever1.png' x='140' y='85' width='50' height='70' on-touch='up'>
+    <up img='lever2.png' x='120' y='85' width='70' height='70' /> 
+  
+      
+      
+      
+    </agent>
+    <agent img='white.png' x='-20' y='99' width='65' height='65'/>
+    <agent img='pink.png' x='40' y='99' width='65' height='65'/>
+    
+    <agent img='back.png' x='18'  y='12' width='64' height='64' on-touch='_PREV_PAGE' />
+    
+    
+    <agent img='balao1.png' 
+      x='65' y='140' width='130' height='130'/>
+    <agent text='Um rio de ácido, e agora?' 
+      x='75' y='135'  width='120' height='100' on-touch='fala1' color='black'>
+      <fala1 text='Olha uma alavanca, vamos puxar!' x='78' y='145'  width='122' height='100'/>
+    
+    </agent>
+    
+    
+    
     
   </page>
+  
+  <page background='back2.png' soundtrack='music2.wav'>
+    <agent text='Depois de um dia de caminhada, Pink e White chegaram a entrada da Floresta Proibida.' x='20' y='450' font-size='20' color='black'>
+    
+    </agent>
+    <agent img='white.png' x='200' y='99' width='65' height='65'/>
+    <agent img='pink.png' x='300' y='99' width='65' height='65'/>
+    <agent img='ground1.png' x='0' y='0' width='100' height='100'/>
+    <agent img='ground1.png' x='100' y='0' width='100' height='100'/>
+    <agent img='ground1.png' x='200' y='0' width='100' height='100'/>
+    <agent img='ground1.png' x='300' y='0' width='100' height='100'/>
+    <agent img='ground1.png' x='400' y='0' width='100' height='100'/>
+    <agent img='ar1.png' x='20' y='100' width='200' height='200'/>
+    <agent img='ar1.png' x='300' y='100' width='200' height='200'/>
+    <agent img='bush2.png' x='250' y='100' width='70' height='40'/>
+    <agent img='bush2.png' x='100' y='100' width='100' height='70'/>
+    <agent img='placa1.png' x='420' y='100' width='60' height='50'/>
+    <agent img='back.png' x='18'  y='12' width='64' height='64' on-touch='_PREV_PAGE'>
+    
+    </agent>
+      <agent img='placa1.png' x='420' y='100' width='60' height='50' on-touch='ler'  >
+        <ler img='skip.png'  x='420' y='12' width='64' height='64' on-touch='_NEXT_PAGE' />
+
+
+    </agent>
+    <agent img='balao1.png'
+      x='215' y='140' width='130' height='130'/>
+    <agent text='Olha uma placa, o que tem escrito nela?' 
+      x='225' y='145'  width='120' height='100' on-touch='fala1' color='black'>
+
+
+    </agent> 
+    <agent img='balao3.png' 
+      x='380' y='-400' width='130' height='130' on-trigger='ler'>
+      <ler y='140'/>
+    
+    </agent>
+    <agent text='Entrada Proibida'
+      x='415' y='-400'  width='50' height='100' color='black' on-trigger='ler'>
+      <ler y='135'/>
+
+    
+    </agent>
+  
+  </page>
+  
+  <page background='ForestA.png'>
+	<agent text='Na entrada da floresta, eles dão de cara com  um Troll' x='20' y='450' font-size='18' color='white' on-touch='history2'>
+    <history2 text='COMIDAAAAA!(TROLL)' y='430' font-size='15' color='white' on-touch='history3'/>
+    <history3 text='Precisamos usar nossa poção do sono nele(White)' y='400' font-size='15' color='white' on-touch='history4'/>
+    <history4 text='Assim que ele adormecer, nós passamos(Pink)' y='400' font-size='15' color='pink'/>
+    </agent>
+    <agent img='white.png' x='50' y='99' width='65' height='65'/>
+    <agent img='pink.png' x='20' y='99' width='65' height='65'/>
+    <agent img='ground1.png' x='0' y='0' width='100' height='100'/>
+    <agent img='ground1.png' x='100' y='0' width='100' height='100'/>
+    <agent img='ground1.png' x='200' y='0' width='100' height='100'/>
+    <agent img='ground1.png' x='300' y='0' width='100' height='100'/>
+    <agent img='ground1.png' x='400' y='0' width='100' height='100'/>
+    <agent img='mushroom.png' x='300' y='100' width='20' height='20'/>
+    <agent img='mushroom.png' x='200' y='100' width='20' height='20'/>
+    <agent img='mushroom.png' x='370' y='100' width='20' height='20'/>
+    <agent img='back.png' x='18'  y='12' width='64' height='64' on-touch='_PREV_PAGE' />
+    <agent img='troll2.png' x='230' y='50' width='400' 
+      height='300' drop-zone='dead'> 
+        <dead img='troll1.png' x='230' y='30' width='400' height='300'/>
+    </agent>
+    <agent img='sono1.png' x='35' y='150' 
+      width='50' height='50' draggable='true' on-drop='dead' on-zone='out' on-trigger='out'>
+    	 <out  img='' x='0' y='0' width='0' height='0'/>
+    
+    
+    </agent>
+    <agent img='skip.png'  x='420' y='-200' width='64' height='64' on-touch='_NEXT_PAGE' on-trigger='dead'>
+      <dead y='12'/>
+      
+    </agent>
+  </page>
+  
+  <page background='caventer.jpg'>
+    <agent text='Caverna Proibida' x='20' y='450' font-size='20' color='black'>
+    
+    </agent>
+    <agent img='ground1.png' x='0' y='-50' width='100' height='100'/>
+    <agent img='ground1.png' x='100' y='-50' width='100' height='100'/>
+    <agent img='ground1.png' x='200' y='-50' width='100' height='100'/>
+    <agent img='ground1.png' x='300' y='-50' width='100' height='100'/>
+    <agent img='ground1.png' x='400' y='-50' width='100' height='100'/>
+    <agent img='ar1.png' x='320' y='50' width='300' height='300'/>
+    <agent img='ar1.png' x='-80' y='50' width='300' height='300'/>
+    <agent img='caventer.png' x='370' y='80' width='200' height='200'/>
+    <agent img='bush2.png' x='320' y='70' width='80' height='60'/>
+    <agent img='bush2.png' x='250' y='70' width='60' height='40'/>
+    <agent img='placa1.png' x='230' y='70' width='60' height='50'/>
+    <agent text='💀' x='250' y='60' width='50' height='50'/>
+    <agent img='white.png' x='30' y='50' width='65' height='65'/>
+    <agent img='pink.png' x='120' y='50' width='65' height='65'/>
+    <agent img='back.png' x='18'  y='-5' width='64' height='64' on-touch='_PREV_PAGE' />
+    <agent img='seta.png'  x='310' y='115' width='30' height='30' on-touch='_NEXT_PAGE' />
+    
+    <agent img='balao1.png' 
+      x='130' y='75' width='130' height='130'/>
+    <agent text='A caverna proibida! White, vamos entrar!' 
+      x='150' y='90'  width='100' height='100' color='black'>
+   
+      
+    
+    </agent>
+    
+  </page>
+  
+  <page background='cavepass.jpg' soundtrack='cavem.wav'>
+    <agent text='Ao entrar na caverna setiram um presentimento muito ruim.' x='20' y='450' font-size='20' color='white'>
+      
+    </agent>
+    <agent img='pink.png' x='240' y='80' width='65' height='65'/>
+    <agent img='white.png' x='230' y='60' width='65' height='65'/>
+    <agent img='back.png' x='18'  y='150' width='64' height='64' on-touch='_PREV_PAGE' />
+    <agent img='skip.png'  x='420' y='150' width='64' height='64' on-touch='_NEXT_PAGE' />
+    
+    <agent img='balao1.png' 
+      x='250' y='120' width='95' height='90'/>
+    <agent text='Que medo!' 
+      x='260' y='85'  width='100' height='100' color='black'>
+    
+		
+    </agent>
+    
+  </page>
+  
+  <page background='CAVEIN.jpg' soundtrack='cavem.wav'>
+    <agent text='Andando pela caverna, observaram vários ossos pelo chão, o que os deixou com muito medo, mas o espirito de aventura deles era maior e continuaram adentrando a caverna.' x='20' y='390' font-size='20' color='white'>
+    
+    </agent>
+    <agent img='4.png' x='0' y='0' width='100' height='100'/>
+    <agent img='4.png' x='100' y='0' width='100' height='100'/>
+    <agent img='4.png' x='200' y='0' width='100' height='100'/>
+    <agent img='4.png' x='300' y='0' width='100' height='100'/>
+    <agent img='4.png' x='400' y='0' width='100' height='100'/>
+    <agent img='placa1.png' x='20' y='98' width='60' height='50'/>
+    <agent text='💀' x='40' y='90' width='50' height='50'/>
+    <agent img='Bone1.png' x='350' y='0' width='100' height='100'/>
+    <agent img='Bone1.png' x='100' y='0' width='100' height='100'/>
+    <agent img='pink.png' x='260' y='80' width='65' height='65'/>
+    <agent img='white.png' x='230' y='60' width='65' height='65'/>
+		<agent img='back.png' x='18'  y='12' width='64' height='64' on-touch='_PREV_PAGE' />
+    <agent img='skip.png'  x='420' y='12' width='64' height='64' on-touch='_NEXT_PAGE' />
+    
+  </page>
+  
+  <page background='CAVEIN.jpg' soundtrack='cavem.wav'>
+    <agent text='sem' x='20' y='-390' font-size='20' color='brown'>
+      
+    </agent>
+    <agent img='4.png' x='0' y='0' width='100' height='100'/>
+    <agent img='4.png' x='100' y='0' width='100' height='100'/>
+    <agent img='4.png' x='200' y='0' width='100' height='100'/>
+    <agent img='4.png' x='300' y='0' width='100' height='100'/>
+    <agent img='4.png' x='400' y='0' width='100' height='100'/>
+    <agent img='Bone2.png' x='400' y='0' width='100' height='100'/>
+    <agent img='Bone1.png' x='300' y='0' width='100' height='100'/>
+    <agent img='Bone2.png' x='100' y='0' width='100' height='100'/>
+    <agent img='pink.png' x='200' y='80' width='65' height='65'/>
+    <agent img='white.png' x='300' y='60' width='65' height='65'/>
+		<agent img='back.png' x='18'  y='12' width='64' height='64' on-touch='_PREV_PAGE' />
+    <agent img='skip.png'  x='420' y='12' width='64' height='64' on-touch='_NEXT_PAGE' />
+    
+    
+  </page>
+  
+  <page background='CAVEIN.jpg' soundtrack='boss_battle.wav'>
+    <agent text='Ao entrar ainda mais ao fundo da caverna, eles se deparam com um terrível monstro.' x='20' y='400' font-size='20' color='white' on-touch='history2'>
+      <history2 text='Pink e White possuiam habilidades secretas e sumonaram um machado. Assim, poderiam atacar o monstro com o machado, pois era a única saída' x='20' y='370' font-size='20' color='white'  />
+      
+    
+    </agent>
+    <agent img='4.png' x='0' y='0' width='100' height='100' /> 
+    <agent img='4.png' x='100' y='0' width='100' height='100' /> 
+    <agent img='4.png' x='200' y='0' width='100' height='100' /> 
+    <agent img='4.png' x='300' y='0' width='100' height='100' /> 
+    <agent img='4.png' x='400' y='0' width='100' height='100' /> 
+  	<agent img='white.png' x='45' y='98' width='65' height='65'>
+    
+    
+    </agent>
+  	<agent img='pink.png' x='15' y='98' width='65' height='65' on-touch='sumach'>
+      
+    </agent>
+      <agent img='machado.png' x='35' y='-300' width='100' height='100' draggable='true' on-drop='dead' on-trigger='sumach'>
+      	<sumach img='machado.png' x='35' y='200' width='100' height='100' on-trigger='out' on-zone='out' />
+      		<out img='machado.png' x='0' y='0' width='0' height='0'/>
+        		
+            
+    </agent>
+    <agent img='MONSTER.png' x='300' y='100' width='300' height='280' drop-zone='dead'> 
+    	<dead img='diamante.png' x='300' y='110' width='40' height='40' on-touch='apper'/>
+        <apper img='vortex.png' x='300' y='120' width='250' height='250' on-touch='_NEXT_PAGE'/>
+   
+  </agent> 
+  
+  </page>
+  
+  <page background='vila.jpg'> 
+    <agent text='Ao pegar o cristal que  o monstro dropou, eles foram teleportados para sua vila.' x='20' y='400' font-size='20' color='black'>
+    
+    </agent>   
+    <agent img='ground1.png' x='0' y='0' width='100' height='100'/>
+    <agent img='ground1.png' x='100' y='0' width='100' height='100'/>
+    <agent img='ground1.png' x='200' y='0' width='100' height='100'/>
+    <agent img='ground1.png' x='300' y='0' width='100' height='100'/>
+    <agent img='ground1.png' x='400' y='0' width='100' height='100'/>
+    <agent img='ar1.png' x='20' y='100' width='200' height='200'/>
+    <agent img='bush2.png' x='300' y='100' width='100' height='70'/>
+    <agent img='white.png' x='130' y='99' width='65' height='65'/>
+    <agent img='pink.png' x='230' y='99' width='65' height='65'/>
+    <agent img='diamante.png' x='200' y='110' width='40' height='40' on-touch='_GOTO_PAGE:1'>
+    
+    
+    
+  	</agent>
+  </page>
+  
 </fable>
